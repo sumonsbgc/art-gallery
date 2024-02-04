@@ -1,0 +1,93 @@
+import { Country, UserData } from '@/redux/features/auth/auth.types';
+
+export type ArtItem = {
+  avg_critic_rating: number;
+  avg_customer_rating: number;
+  image_path: string;
+  is_adult: number;
+  sale_status: number;
+  item_category: string;
+  item_desc: string;
+  item_featured: string;
+  item_file: string;
+  item_id: number;
+  item_name: string;
+  item_preview: string;
+  item_shortdesc: string;
+  item_slug: string;
+  item_tags: string;
+  item_label_by_system: string;
+  item_thumbnail: string;
+  item_token: string;
+  mainOwner: UserData;
+  material_id: elementType;
+  medium_id: elementType;
+  regular_price: number;
+  base_price: number;
+  size_id: elementType;
+  subject_id: elementType;
+  total_favorite: number;
+  total_review_artist: number;
+  total_review_product: number;
+  total_avg_rating: number;
+  current_owner_id: CurrentOwnerType;
+  price_detail: PriceDetail;
+  review_opinion: number;
+  price_status: string;
+  price_percent: number;
+};
+
+export type elementType = {
+  id: number;
+  name: string;
+};
+
+export type PriceDetail = {
+  id: number;
+  item_id: number;
+  critic_avg_price: string;
+  critic_rating_price: string;
+  favorite_price: string;
+  customer_rating_price: string;
+  final_price: number;
+};
+
+export type CurrentOwnerType = {
+  about: string;
+  address: string;
+  artist_award: string[];
+  artist_document: string[];
+  city: string;
+  country: Country;
+  country_badge: number;
+  critic_award: string[];
+  critic_designation: string;
+  critic_document: string;
+  critic_experience: string;
+  critic_organization: string;
+  designation: string;
+  drop_status: string;
+  email: string;
+  experience: string;
+  facebook_url: string;
+  first_name: string;
+  gplus_url: string;
+  id: string;
+  image_path: string;
+  instagram_url: string;
+  last_name: string;
+  linkedin_url: string;
+  mobile: string;
+  name: string;
+  organization: string;
+  pinterest_url: string;
+  twitter_url: string;
+  user_document_verified: string;
+  user_photo: string;
+  user_token: string;
+  user_type: string;
+  username: string;
+  verified: number;
+  website: string;
+  zip_code: string;
+};
